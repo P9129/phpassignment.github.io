@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+        //document.cookie = "studentemailid=; expires=mon, 27 nov 2022 07:36:00 UTC; path=/;";
+        function validate()
+        {
+             
+                var studentemaild = document.getElementById('studentemailid');
+                var studentpassword = document.getElementById('studentpassword');
+                 
+                
+                if (studentemaild.value =="" | studentpassword == "") 
+                {
+                      alert("User name and password should not be blank") ;
+                      return false;
+                }
+                  
+               
+
+        }
+        </script>
+       
+    </head>
+    <body >
+        <div class="LoginMainForm"> 
+            <center>        
+        <form name="loginpage" action="login_page1.php" method="get" onsubmit="return  validate()">
+            
+            <br><br>
+            <br><br>   
+            <h1> Login Form </h1>     
+            <div class="LoginFormAttribute">
+            <table>
+            <tr><label><b> Enter User Name: </b></label>   
+            <input type="text" name="studentemailid" id="studentemailid"   placeholder="Enter email id" >
+            <br><br>
+            <tr><label> <b>Enter Password:  &nbsp; </b> </label>
+            <input type="password" name="studentpassword" id="studentpassword"  placeholder="Enter password" >
+            <br><br>
+        </table>
+            <input type="submit" value="submit" > &nbsp;
+            <input type="reset" value="Cancel">
+            
+            
+            
+            <label> <a href="registration.html"> <h1> Not a member? Signup now</h1> </a></label>    
+            
+            </div> 
+            </center>           
+        </form>
+        </div>
+            
+
+           
+    </body>   
+</html>

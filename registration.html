@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+        
+            function validate()
+            {
+                 
+                     
+                     
+                    var studentname = document.getElementById('studentname');
+                    var studentpassword = document.getElementById('studentpassword');
+                    var studentroll = document.getElementById('studentroll');
+                    var studentmobile = document.getElementById('studentmobile');
+                    var studentemailid = document.getElementById('studentemailid');
+
+                    var msg= "";
+
+                    var flag = true;
+
+                    
+                    if(studentname.value =="")
+                    {
+                        msg = msg + " \n Student name should not be blank";
+                        flag = false;
+                    }
+
+                    if(studentpassword.value =="")
+                    {
+                        msg = msg + " \n Student password should not be blank";
+                        flag = false;
+                    }
+
+                    if(studentroll.value =="")
+                    {
+                        msg = msg + " \n Student roll number should not be blank";
+                        flag = false;
+                    }
+                    
+                    if(studentmobile.value =="")
+                    {
+                        msg = msg + "\n Student mobile number should not be blank";
+                        flag = false;                        
+                    }
+
+                    if(studentemailid.value =="")
+                    {
+                        msg = msg + "\n Student email number should not be blank" ;
+                        flag = false;                       
+                    }
+
+                    if(flag == false)
+                    {
+                        alert(" "+msg);
+                        return false;
+                    }    
+                }
+            </script>
+    </head>
+    <body >
+              
+        <form name="loginpage" action="registration_page2.php" method="get" onsubmit="return  validate()">
+            <center>
+            <br><br>
+            <br><br>    
+         
+            
+             <table cellpadding="15px" >
+                <h1>Student Registration Form</h1> 
+                
+                <tr>
+                    <td><b>Enter Student Name:</b>
+                    <td><input type="text" id="studentname" name="studentname" placeholder="enter student name" >
+
+               </tr>
+               <tr>
+                     <td><b>Enter Password:</b>
+                     <td><input type="password" id="studentpassword" name="studentpassword"  placeholder="enter password">
+               </tr>
+
+               <tr>
+                <td><b>Enter Student Roll Number:</b>
+                <td><input type="text" id="studentroll" name="studentroll" placeholder="enter student rollno" >
+              </tr>
+
+               <tr>
+                 <td><b>Enter Student Mobile Number:</b>
+                 <td> <input type="text" id="studentmobile" name="studentmobile" placeholder="enter student mobile no"  >
+               </tr>
+           
+             <tr>
+                  <td> <b>Enter Student Email id:</b>
+                   <td>  <input type="text" id="studentemailid" name="studentemailid"  placeholder="enter student emailid" >
+             </tr>
+
+             </table>
+             <br><br>
+
+                    <input type="submit" value="submit"> &nbsp;&nbsp;&nbsp;
+                     <input type="reset" value="Cancel">
+        
+                  
+
+         
+
+            
+            </center>           
+        </form>
+       
+            
+
+           
+    </body>   
+</html>

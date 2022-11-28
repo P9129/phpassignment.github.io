@@ -1,0 +1,33 @@
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: khaki;
+}
+
+
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+
+
+
+.form .button input{
+    border: none;
+    color: rgb(214, 54, 54);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+
